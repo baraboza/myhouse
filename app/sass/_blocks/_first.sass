@@ -1,29 +1,9 @@
 .first
 	background: url(../img/first.jpg) no-repeat
 	background-size: auto 100%
-	background-position: center
+	background-position: right
 	background-color: #f3f3f3
-	min-height: 564px
-	position: relative
 	margin-bottom: 16px
-
-	&::before
-		content: ''
-		display: block
-		padding-top: 38.9%
-
-	&__wrap
-		position: absolute
-		width: 100%
-		height: 100%
-		top: 0
-		left: 0
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		align-items: center
 
 	&__inner
 		padding-top: 60px
@@ -39,3 +19,9 @@
 	&__button
 		width: 100%
 		text-align: center
+
++media-breakpoint-down(md)
+	.first
+		background-image: url('../img/first-tablet.jpg')
+		background-size: auto
+		background-position: right bottom
