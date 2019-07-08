@@ -1,0 +1,49 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	min-width: 320px
+	position: relative
+	font-family: 'IBM Plex Sans', sans-serif;
+	overflow-x: hidden
+	color: #0A1428
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+main
+	margin-bottom: auto
+
+img
+	max-width: 100%
+
+a
+	color: #3E7FFF
+	text-decoration: none
+	cursor: $pointer
+	&:hover
+		color: #3E7FFF
+		text-decoration: underline
+
+.text-center
+	text-align: center
+
+@import "_blocks/button"
+@import "_blocks/input"
+@import "_blocks/label"
+@import "_blocks/range"
+@import "_blocks/select"
+@import "_blocks/text"
+@import "_blocks/title"
+@import "_blocks/toggle-menu"
+
+@import "_blocks/header"
+@import "_blocks/first"
+@import "_blocks/services"
+
+//@import "media" // Always at the end

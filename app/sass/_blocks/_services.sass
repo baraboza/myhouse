@@ -1,0 +1,82 @@
+.services
+	padding-top: 40px
+	padding-bottom: 40px
+
+	&__title
+		margin-bottom: 16px
+
+	&__introtext
+		margin-bottom: 50px
+		max-width: 570px
+		margin-left: auto
+		margin-right: auto
+
+	&__grid
+		display: grid
+		grid-template-rows: 240px 240px
+		grid-template-columns: 1fr 1fr 1fr
+		grid-column-gap: 42.5px
+		grid-row-gap: 40px
+
+	&__grid-item
+		position: relative
+		padding: 24px
+		border-radius: 4px
+		background-size: cover
+		background-position: center center
+
+		&--vertical
+			grid-row-start: 1
+			grid-row-end: 3
+
+		&:hover
+			text-decoration: none
+
+	&__subtitle
+		margin-bottom: 8px
+
+	&__price
+		color: #3E7FFF
+		margin-bottom: 0
+
++media-breakpoint-down(lg)
+	.services
+		&__grid
+			grid-template-rows: 184px 184px
+			grid-column-gap: 40px
+
++media-breakpoint-down(md)
+	.services
+
+		&__introtext
+			margin-bottom: 40px
+
+		&__grid
+			grid-template-rows: repeat(3, 217px)
+			grid-template-columns: 1fr 1fr
+			grid-gap: 20px
+
++media-breakpoint-down(sm)
+	.services
+		padding-top: 20px
+		padding-bottom: 20px
+
+		&__title
+			margin-bottom: 8px
+			margin-bottom: 24px
+
+		&__grid
+			grid-gap: 8px
+			grid-template-rows: repeat(3, 1fr)
+
+		&__grid-item
+			background-image: none !important
+			background-color: #F4F4F6
+			padding: 8px
+			padding-bottom: 15px
+
+		&__subtitle
+			margin-bottom: 4px
+
+
+
