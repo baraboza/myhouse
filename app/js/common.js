@@ -28,4 +28,31 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 		$(this).parent().find('.range__value').html($(this).val());
 	});
 
+
+// reviews
+	$('.reviews__item').eq(0).addClass('reviews__item--focus');
+	var reviewsItemWidth = $('.reviews__item--focus').css('width').replace('px', '');
+	var reviewsIndex = 0;
+	var reviewsMaxIndex = $('.reviews__item').length - 1;
+
+	$('.reviews__button--next').click(function() {
+		if (reviewsIndex < reviewsMaxIndex) {
+			reviewsIndex++;
+			$('.reviews__list').css('left', (-reviewsIndex * reviewsItemWidth) + 'px')
+			$('.reviews__item--focus').next().addClass('reviews__item--focus');
+			$('.reviews__item--focus').eq(0).removeClass('reviews__item--focus');
+		}
+	});
+
+	$('.reviews__button--prev').click(function() {
+		if (reviewsIndex > 0) {
+			reviewsIndex--;
+			$('.reviews__list').css('left', (-reviewsIndex * reviewsItemWidth) + 'px')
+			$('.reviews__item--focus').prev().addClass('reviews__item--focus');
+			$('.reviews__item--focus').eq(1).removeClass('reviews__item--focus');
+		}
+	});
+
+
+
 });
