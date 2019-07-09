@@ -34,6 +34,11 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 	var reviewsItemWidth = $('.reviews__item--focus').css('width').replace('px', '');
 	var reviewsIndex = 0;
 	var reviewsMaxIndex = $('.reviews__item').length - 1;
+	
+	for (var i = 0; i <= reviewsMaxIndex; i++) {
+		$('.reviews__dots').append('<span data-index="' + i + '" class="reviews__dots-item"></span>')
+	}
+	$('.reviews__dots-item').eq(0).addClass('reviews__dots-item--active');
 
 	$('.reviews__button--next').click(function() {
 		if (reviewsIndex < reviewsMaxIndex) {
@@ -52,7 +57,6 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 			$('.reviews__item--focus').eq(1).removeClass('reviews__item--focus');
 		}
 	});
-
 
 
 });
