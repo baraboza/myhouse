@@ -17,7 +17,7 @@
 		margin-top: -8px
 		margin-right: -8px
 
-	&__button
+	&__arrow
 		width: 48px
 		height: 48px
 		display: flex
@@ -29,13 +29,6 @@
 		cursor: pointer
 		padding: 0
 		transition: transform 0.2s
-		position: relative
-
-		a
-			position: absolute
-			width: 100%
-			height: 100%
-
 
 		&:hover
 			transform: scale(1.1)
@@ -44,21 +37,12 @@
 			margin-right: 24px
 
 
-	&__list-wrap
+	&__list
 		margin-bottom: 68px
 		width: 815px
 
-		.bx-wrapper
-			background: none
-			box-shadow: none
-			border: none
-			margin: 0
-
-		.bx-viewport
-			overflow: visible !important
-
-		.bx-pager
-			display: none
+		.slick-list
+			overflow: visible
 
 	&__item
 		padding-right: 180px
@@ -88,3 +72,79 @@
 		line-height: 20px
 		color: #4B90E2
 
+	.slick-slider
+    -webkit-user-select: text
+    -moz-user-select: text
+    -ms-user-select: text
+    user-select: text
+	
+	.slick-slide
+  	outline: none
+
+	&__dots
+		text-align: center
+		display: none !important
+		line-height: 0
+		padding-left: 0
+
+
+		li
+			display: inline-block
+			margin: 0 4px
+
+		button
+			padding: 0
+			display: block
+			font-size: 0
+			width: 8px
+			height: 8px
+			border: none
+			border-radius: 50%
+			outline: none
+			background-color: #D8D8D8
+
+		.slick-active	button
+			background-color: #3E7FFF
+
+	&__button
+		width: 240px
+
+
++media-breakpoint-down(md)
+	.reviews
+		padding: 48px 0 40px
+
+		&__top
+			justify-content: center
+
+		&__buttons
+			display: none
+
+		&__text
+			text-align: center
+
+		&__author
+			justify-content: center
+
+		&__list
+			width: 100%
+			margin-bottom: 40px
+
+			.slick-list
+				overflow: hidden
+
+		&__item
+			padding-right: 0
+			margin-bottom: 24px
+
+		&__dots
+			display: block !important
+
+		&__button
+			display: block
+			margin-left: auto
+			margin-right: auto
+
++media-breakpoint-down(sm)
+	.reviews
+		padding: 24px 0 16px
