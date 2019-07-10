@@ -30,12 +30,12 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 
 
 // reviews
-	$('.reviews__list').slick({
-		prevArrow: $('.reviews__arrow--prev'),
-		nextArrow: $('.reviews__arrow--next'),
+	$('.section-reviews__list').slick({
+		prevArrow: $('.section-reviews__arrow--prev'),
+		nextArrow: $('.section-reviews__arrow--next'),
 		infinite: false,
 		dots: true,
-		dotsClass: 'reviews__dots'
+		dotsClass: 'section-reviews__dots'
 	});
 
 
