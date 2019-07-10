@@ -1,6 +1,6 @@
 @mixin inner-item($number, $top, $left, $right, $width)
 	.section-how__inner-item:nth-of-type(#{$number})
-		top: $top - 2px
+		top: $top
 		left: $left
 		right: $right
 		width: $width
@@ -31,6 +31,7 @@
 		display: flex
 		justify-content: center
 		z-index: 1
+		margin-bottom: 0
 
 	&__tab
 		width: 120px
@@ -127,3 +128,37 @@
 			@include inner-item(5, 186px, auto, 429px, 200px)
 			.section-how__inner-item:nth-of-type(n + 6)
 				display: none
+
++media-breakpoint-down(lg)
+	.section-how
+		
+		&--main .section-how__item
+			&:nth-of-type(1)
+				@include inner-item(1, 100px, 700px, auto, 160px)
+				@include inner-item(2, 370px, 100px, auto, 160px)
+				@include inner-item(3, 480px, 560px, auto, 100px)
+				@include inner-item(4, 330px, 700px, auto, 150px)
+				@include inner-item(5, 250px, auto, 440px, 200px)
+				.section-how__inner-item:nth-of-type(n + 6)
+					display: none
+			&:nth-of-type(2)
+				@include inner-item(1, 17.63%, 79.91%, auto, 160px)
+				@include inner-item(2, 307px, 650px, auto, 160px)
+				@include inner-item(3, 490px, 40px, auto, 100px)
+				@include inner-item(4, 415px, auto, 580px, 150px)
+				@include inner-item(5, 170px, auto, 280px, 200px)
+				.section-how__inner-item:nth-of-type(n + 6)
+					display: none
+
++media-breakpoint-down(md)
+	.section-how
+		padding-top: 40px
+		padding-bottom: 40px
+
+		&__container
+			max-width: 768px
+			padding: 0
+
+		&__tabs
+			position: static
+			margin-bottom: 24px
