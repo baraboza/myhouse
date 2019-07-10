@@ -1,3 +1,104 @@
+@mixin inner-item($number, $top, $left, $right, $width)
+	.section-how__inner-item:nth-of-type(#{$number})
+		top: $top - 2px
+		left: $left
+		right: $right
+		width: $width
+
 .section-how
 	padding-top: 52px
 	padding-bottom: 52px
+
+	&__title
+		margin-bottom: 16px
+
+	&__text
+		margin-bottom: 56px
+		max-width: 771px
+		margin-left: auto
+		margin-right: auto
+
+	&__main
+		position: relative
+		border-radius: 4px
+		overflow: hidden
+
+	&__tabs
+		position: absolute
+		top: 32px
+		width: 100%
+		display: flex
+		justify-content: center
+		z-index: 1
+
+	&__tab
+		width: 120px
+		height: 48px
+		border: 1px solid #E5E5E5
+		background-color: #fff
+		cursor: pointer
+		padding: 0
+
+		&:hover
+			background-color: #E5E5E5
+
+		&:focus
+			outline: none
+
+		&--active
+			background-color: #3E7FFF
+			border-color: #3E7FFF
+			color: #fff
+
+			&:hover
+				background-color: #3E7FFF
+				border-color: #3E7FFF
+				color: #fff
+				cursor: default
+
+		&:first-of-type
+			border-radius: 4px 0 0 4px
+
+		&:last-of-type
+			border-radius: 0 4px 4px 0
+
+	&__item
+		position: relative
+
+	&__inner-item
+		position: absolute
+		padding-left: 24px
+		font-size: 16px
+		line-height: 20px
+		box-sizing: content-box
+
+		&::before
+			content: ''
+			position: absolute
+			width: 16px
+			height: 16px
+			border: 2px solid #fff
+			background-color: #3E7FFF
+			border-radius: 50%
+			top: 2px
+			left: 0
+			box-sizing: border-box
+
+		&--right
+			text-align: right
+			padding-left: 0
+			padding-right: 24px
+
+			&::before
+				left: auto
+				right: 0
+
+	&--main .section-how__item
+		&:nth-of-type(1)
+			@include inner-item(1, 139px, 858px, auto, 160px)
+			@include inner-item(2, 469px, 134px, auto, 160px)
+			@include inner-item(3, 610px, 741px, auto, 100px)
+			@include inner-item(4, 436px, 934px, auto, 150px)
+			@include inner-item(5, 316px, auto, 569px, 200px)
+			.section-how__inner-item:nth-of-type(n + 6)
+				display: none
