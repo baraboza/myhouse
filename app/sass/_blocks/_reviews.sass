@@ -1,10 +1,12 @@
 .reviews
 	margin-top: 52px
 	margin-bottom: 52px
-	padding: 48px
-	background-color: #F4F4F6
-	overflow: hidden
-	border-radius: 4px
+
+	&__inner
+		padding: 48px
+		background-color: #F4F4F6
+		border-radius: 4px
+		overflow: hidden
 
 	&__top
 		margin-bottom: 40px
@@ -112,7 +114,12 @@
 
 +media-breakpoint-down(md)
 	.reviews
-		padding: 48px 0 40px
+		background-color: #F4F4F6
+
+		&__inner
+			padding-left: 0
+			padding-right: 0
+			padding-bottom: 40px
 
 		&__top
 			justify-content: center
@@ -147,4 +154,15 @@
 
 +media-breakpoint-down(sm)
 	.reviews
-		padding: 24px 0 16px
+
+		&__inner
+			padding: 24px 0 16px
+
+		&__top
+			margin-bottom: 16px
+
+		&__list
+			margin-bottom: 27px
+
+		&__text
+			margin-bottom: 8px
