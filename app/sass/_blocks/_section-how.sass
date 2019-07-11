@@ -1,9 +1,8 @@
-@mixin inner-item($number, $top, $left, $right, $width)
+@mixin inner-item($number, $top, $left, $right)
 	.section-how__inner-item:nth-of-type(#{$number})
 		top: $top
 		left: $left
 		right: $right
-		width: $width
 
 .section-how
 	padding-top: 52px
@@ -113,52 +112,106 @@
 
 	&--main .section-how__item
 		&:nth-of-type(1)
-			@include inner-item(1, 139px, 858px, auto, 160px)
-			@include inner-item(2, 469px, 134px, auto, 160px)
-			@include inner-item(3, 610px, 741px, auto, 100px)
-			@include inner-item(4, 436px, 934px, auto, 150px)
-			@include inner-item(5, 316px, auto, 569px, 200px)
+			@include inner-item(1, 18%, 73%, auto)
+			@include inner-item(2, 61%, 11%, auto)
+			@include inner-item(3, 80%, 63%, auto)
+			@include inner-item(4, 57%, 79%, auto)
+			@include inner-item(5, 41%, auto, 48%)
 			.section-how__inner-item:nth-of-type(n + 6)
 				display: none
 		&:nth-of-type(2)
-			@include inner-item(1, 139px, 943px, auto, 160px)
-			@include inner-item(2, 398px, 832px, auto, 160px)
-			@include inner-item(3, 637px, 132px, auto, 100px)
-			@include inner-item(4, 526px, auto, 751px, 150px)
-			@include inner-item(5, 186px, auto, 429px, 200px)
+			@include inner-item(1, 18%, 80%, auto)
+			@include inner-item(2, 52.1%, 70.6%, auto)
+			@include inner-item(3, 83.5%, 11.2%, auto)
+			@include inner-item(4, 68.9%, auto, 63.7%)
+			@include inner-item(5, 24.2%, auto, 36.4%)
 			.section-how__inner-item:nth-of-type(n + 6)
 				display: none
-
-+media-breakpoint-down(lg)
-	.section-how
-		
-		&--main .section-how__item
-			&:nth-of-type(1)
-				@include inner-item(1, 100px, 700px, auto, 160px)
-				@include inner-item(2, 370px, 100px, auto, 160px)
-				@include inner-item(3, 480px, 560px, auto, 100px)
-				@include inner-item(4, 330px, 700px, auto, 150px)
-				@include inner-item(5, 250px, auto, 440px, 200px)
-				.section-how__inner-item:nth-of-type(n + 6)
-					display: none
-			&:nth-of-type(2)
-				@include inner-item(1, 17.63%, 79.91%, auto, 160px)
-				@include inner-item(2, 307px, 650px, auto, 160px)
-				@include inner-item(3, 490px, 40px, auto, 100px)
-				@include inner-item(4, 415px, auto, 580px, 150px)
-				@include inner-item(5, 170px, auto, 280px, 200px)
-				.section-how__inner-item:nth-of-type(n + 6)
-					display: none
 
 +media-breakpoint-down(md)
 	.section-how
 		padding-top: 40px
 		padding-bottom: 40px
 
+		&__text
+			margin-bottom: 40px
+
 		&__container
-			max-width: 768px
-			padding: 0
+			max-width: 100%
+			padding: 0 !important
 
 		&__tabs
 			position: static
 			margin-bottom: 24px
+
+		&__inner-item
+			font-size: 10.42px
+			line-height: 14px
+			padding-left: 17px
+
+			&::before
+				width: 12px
+				height: 12px
+				border-width: 2px
+
++media-breakpoint-down(sm)
+	.section-how
+		padding-top: 20px
+		padding-bottom: 20px
+
+		&__main
+			overflow: visible
+			margin-bottom: 24px
+
+		&__title
+			margin-bottom: 8px
+
+		&__container
+			max-width: 540px
+			padding-left: 16px !important
+			padding-right: 16px !important
+
+		&__text
+			margin-bottom: 16px
+
+		&__tab
+			width: 73px
+			height: 40px
+
+		&__item
+
+			img
+				display: none
+
+		&__inner-list
+			list-style-type: disc
+			padding-left: 12px
+
+		&__inner-item
+			position: static
+			font-size: 14px
+			line-height: 22px
+			padding: 0
+			margin-bottom: 16px
+			text-align: left
+			display: list-item !important
+
+			&:last-of-type
+				margin-bottom: 0
+
+			&::before
+				display: none
+
+			br
+				display: none
+
+		&__bottom
+			max-width: 100%
+			flex-direction: column
+			justify-content: center
+			text-align: center
+
+		&__button
+			margin-left: auto
+			margin-right: auto
+			margin-top: 8px
