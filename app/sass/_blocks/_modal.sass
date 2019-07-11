@@ -1,0 +1,44 @@
+.modal
+	position: fixed
+	background: rgba(0, 0, 0, 0.24)
+	width: 100%
+	height: 100vh
+	left: 0
+	top: 0
+	z-index: 10
+	display: none
+	overflow: auto
+
+	&__wrap
+		width: 100%
+		min-height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__inner
+		background-color: #fff
+		padding: 56px
+		width: 100%
+		max-width: 770px
+		position: relative
+		box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.24)
+
+	&__close
+		position: absolute
+		right: 24px
+		top: 24px
+		padding: 0
+		border: none
+		background: none
+		cursor: pointer
+
++media-breakpoint-down(sm)
+	.modal
+
+		&__inner
+			padding: 16px
+
+		&__close
+			top: 16px
+			right: 16px

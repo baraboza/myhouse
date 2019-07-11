@@ -51,11 +51,34 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 		$('.section-how__item').eq($('.section-how__tab').index($(this))).fadeIn();
 	});
 
+	$('.section-how__button').click(function() {
+		$('.section-how__modal').fadeIn();
+		$("html,body").addClass("overflow-hidden");
+	});
+
 
 // section-questions
 	$('.section-questions__question').click(function() {
 		$(this).next().fadeToggle();
 		$(this).find('.section-questions__arrow').toggleClass('section-questions__arrow--active');
+	});
+
+
+// scroll-form
+	$(window).scroll(function() {
+      if($(this).scrollTop() >= 1000) {
+          $('.scroll-form').addClass('scroll-form--visible');
+      }
+      else{
+          $('.scroll-form').removeClass('scroll-form--visible');
+      }
+  });
+
+
+// modal
+	$('.modal__close').click(function() {
+		$('.modal').fadeOut();
+		$("html,body").removeClass("overflow-hidden");
 	});
 
 });
