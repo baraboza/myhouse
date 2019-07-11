@@ -47,4 +47,11 @@ $('input[type=tel]').mask('+7 (999) 999-9999');
 		$('.section-how__item').eq($('.section-how__tab').index($(this))).fadeIn();
 	});
 
+
+// section-questions
+	$('.section-questions__question').click(function() {
+		$(this).next().fadeToggle();
+		$(this).find('.section-questions__arrow').toggleClass('section-questions__arrow--active');
+	});
+
 });
