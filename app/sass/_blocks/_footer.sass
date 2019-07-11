@@ -1,0 +1,195 @@
+.footer
+	margin-top: 52px
+	border-top: 1px solid #e5e5e5
+	padding-top: 42px
+	padding-bottom: 32px
+
+	&__layout
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+		margin-bottom: 8px
+
+	&__messengers
+		margin-right: 107px
+		line-height: 0
+		margin-bottom: 4px
+
+		span
+			display: block
+			margin-bottom: 16px
+
+		a
+			display: inline-block
+			margin-right: 24px
+
+			&:last-of-type
+				margin-right: 0
+
+			&:hover
+				text-decoration: none
+
+	&__social
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 4px
+		width: 150px
+
+		span
+			width: 100%
+			margin-bottom: 16px
+
+		a
+			display: flex
+			margin-right: 24px
+			width: 32px
+			height: 32px
+			background-color: #b7b7b7
+			border-radius: 4px
+			justify-content: center
+			align-items: center
+
+			&:last-of-type
+				margin-right: 0
+
+			&:hover
+				background-color: #c5c5c5
+				text-decoration: none
+
+	&__phone
+		margin-left: auto
+		margin-bottom: 8px
+		margin-right: 32px
+
+	&__button
+		
+		&::before
+			content: 'Вход для пользователей'
+
+	&__copyright
+		width: 100%
+		margin-top: 80px
+
+	&__text
+		font-size: 12px
+		line-height: 15px
+		color: #808080
+		max-width: 670px
+		margin-bottom: 38px
+
+		p
+			margin-bottom: 0
+
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__bottom-left
+		color: #32436B
+		font-size: 12px
+		line-height: 15px
+
+		a
+			color: #32436B
+
+	&__bottom-right
+		display: flex
+		align-items: center
+
+		svg:first-of-type
+			margin-right: 29px
+
++media-breakpoint-down(md)
+	.footer
+
+		&__layout
+			align-items: flex-start
+			border-bottom: 1px solid #e5e5e5
+			margin-bottom: 16px
+
+		&__copyright
+			order: -3
+			width: auto
+			margin-right: auto
+			margin-top: 0
+
+		&__button
+			order: -2
+
+		&__phone
+			order: -1
+			width: 100%
+			margin-right: 0
+			margin-bottom: 24px
+
+		&__messengers
+			padding-top: 24px
+			padding-bottom: 24px
+			margin-right: auto
+			display: flex
+			align-items: center
+			border-top: 1px solid #e5e5e5
+			flex-grow: 1
+
+			span
+				margin-bottom: 0
+				margin-right: 24px
+
+		&__social
+			padding-top: 24px
+			padding-bottom: 24px
+			width: auto
+			align-items: center
+			border-top: 1px solid #e5e5e5
+
+			span
+				width: auto
+				margin-bottom: 0
+				margin-right: 24px
+
+		&__text
+			max-width: none
+
++media-breakpoint-down(sm)
+	.footer
+
+		&__layout
+			margin-bottom: 24px
+
+		&__copyright
+			max-width: 190px
+
+		&__button::before
+			content: 'Вход'
+
+		&__phone
+			margin-top: 20px
+
+		&__messengers
+			padding-top: 16px
+			padding-bottom: 16px
+
+			span
+				margin-right: auto
+
+			a
+				margin-right: 16px
+
+		&__social
+			padding-top: 16px
+			padding-bottom: 16px
+			width: 100%
+
+			span
+				margin-right: auto
+
+		&__bottom-left
+			max-width: 185px
+
+		&__bottom-right
+			flex-direction: column
+
+			svg:first-of-type
+				margin-right: 0
+				margin-bottom: 16px
