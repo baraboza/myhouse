@@ -1,0 +1,100 @@
+.section-login
+	position: relative
+
+	&::before
+		content: ''
+		position: absolute
+		width: 50%
+		height: 100%
+		background-color: #f1f0f5
+		top: 0
+		left: 0
+		z-index: -1
+
+	&__container
+		max-width: 1440px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+
+	&__left-col
+		width: 50%
+		background: url('../img/login-1440.jpg') no-repeat
+		background-size: auto 100%
+		margin-top: -64px
+		background-position: right
+
+		&::before
+			content: ''
+			display: block
+			padding-top: 119.44444%
+
+	&__right-col
+		width: 50%
+		margin-left: auto
+
+	&__inner
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 160px
+		text-align: center
+
+	&__title
+		margin-bottom: 16px
+
+	&__text
+		margin-bottom: 40px
+
+	&__form
+		max-width: 320px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 24px
+
+	&__input
+		margin-bottom: 16px
+
+	&__button
+		width: 100%
+
+	&__policy
+		max-width: 320px
+		margin-left: auto
+		margin-right: auto
+		color: #9DA1A9
+		font-size: 12px
+		line-height: 15px
+
++media-breakpoint-down(md)
+	.section-login
+
+		&::before
+			display: none
+
+		&__container
+			padding-left: 16px
+			padding-right: 16px
+
+		&__left-col
+			display: none
+
+		&__right-col
+			width: 100%
+
+		&__inner
+			margin-top: 80px
+			margin-bottom: 80px
+
++media-breakpoint-down(sm)
+	.section-login
+
+		&__inner
+			margin-top: 24px
+			margin-bottom: 40px
+
+		&__title
+			margin-bottom: 8px
+
+		&__text
+			margin-bottom: 16px

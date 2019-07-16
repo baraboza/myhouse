@@ -119,7 +119,9 @@
 			@include inner-item(5, 41%, auto, 48%)
 			.section-how__inner-item:nth-of-type(n + 6)
 				display: none
-		&:nth-of-type(2)
+
+	&--flat .section-how__item
+		&:nth-of-type(1)
 			@include inner-item(1, 18%, 80%, auto)
 			@include inner-item(2, 52.1%, 70.6%, auto)
 			@include inner-item(3, 83.5%, 11.2%, auto)
@@ -127,6 +129,20 @@
 			@include inner-item(5, 24.2%, auto, 36.4%)
 			.section-how__inner-item:nth-of-type(n + 6)
 				display: none
+		&:nth-of-type(2)
+			@include inner-item(1, 25.5%, 55.4%, auto)
+			@include inner-item(2, 43.9%, 40.8%, auto)
+			@include inner-item(3, 44.6%, 18.3%, auto)
+			@include inner-item(4, 63.9%, auto, 61.7%)
+			@include inner-item(5, 67.2%, 66.3%, auto)
+			@include inner-item(6, 78%, 18.7%, auto)
+		&:nth-of-type(3)
+			@include inner-item(1, 40.8%, 11.9%, auto)
+			@include inner-item(2, 45%, 53.2%, auto)
+			@include inner-item(3, 55.4%, 29.2%, auto)
+			@include inner-item(4, 76.8%, 18.6%, auto)
+			@include inner-item(5, 83.8%, 37.6%, auto)
+			@include inner-item(6, 83.7%, 58%, auto)
 
 	&__modal-title
 		margin-bottom: 32px
@@ -166,6 +182,10 @@
 				width: 12px
 				height: 12px
 				border-width: 2px
+
+			&--right
+				padding-left: 0
+				padding-right: 17px
 
 +media-breakpoint-down(sm)
 	.section-how

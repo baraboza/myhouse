@@ -44,7 +44,7 @@
 			<div class="header__menu-mobile">
 				<div class="header__menu-tablet">
 					<nav class="header__nav">
-						<a href="" class="header__link">Уборка квартир</a>
+						<a class="header__link header__link--active">Уборка квартир</a>
 						<a href="" class="header__link">Уборка домов</a>
 						<a href="" class="header__link">Уборка офисов</a>
 					</nav>
@@ -62,50 +62,133 @@
 	
 	<main>
 		
-		<section class="section-first">
+		<section class="section-first section-first--flat">
 			<div class="container">
 				<div class="section-first__inner">
-					<div class="title title--h1 section-first__title">Уборка квартир <br> от 1490 рублей</div>
-					<form action="">
-						<select name="" class="select section-first__input">
-							<option value="">Поддерживающая уборка</option>
-						</select>
-						<div class="section-first__input range">
-							Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
-							<span class="range__fill"></span>
-							<input type="range" min="0" max="90" value="40">
-						</div>
-						<input type="tel" class="input section-first__input" placeholder="Номер телефона">
-						<button class="button section-first__button">Рассчитать стоимость</button>
-					</form>
+					<div class="title title--h1 section-first__title">Поддерживающая<br> уборка квартир <br> от 1490 рублей</div>
 				</div>
 			</div>
 		</section>
+		
+		<form action="" class="container form-row">
+			<select name="" class="form-row__input select">
+				<option value="">Поддерживающая уборка</option>
+			</select>
+			<div class="form-row__input range">
+				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
+				<span class="range__fill"></span>
+				<input type="range" min="0" max="90" value="40">
+			</div>
+			<input type="tel" class="form-row__input input" placeholder="Номер телефона">
+			<button class="form-row__button button">Рассчитать стоимость</button>
+		</form>
 
-		<section class="section-services container">
-			<div class="section-services__title title title--h2 text-center">Закажите уборку, остальное – наша забота</div>
-			<p class="text section-services__introtext text-center">Оперативно наводим порядок в комнатах и до блеска чистим все поверхности, включая сантехнику, окна и мебель</p>
-			<div class="section-services__grid">
-				<a href="" class="section-services__grid-item section-services__grid-item--vertical" style="background-image: url(img/service1.jpg)">
-					<div class="title title--h3 section-services__subtitle">Уборка квартир</div>
-					<p class="text text--medium section-services__price">от 1490 р.</p>
-				</a>
-				<a href="" class="section-services__grid-item section-services__grid-item" style="background-image: url(img/service2.jpg)">
-					<div class="title title--h3 section-services__subtitle">Уборка квартир</div>
-					<p class="text text--medium section-services__price">от 1490 р.</p>
-				</a>
-				<a href="" class="section-services__grid-item section-services__grid-item" style="background-image: url(img/service3.jpg)">
-					<div class="title title--h3 section-services__subtitle">Уборка квартир</div>
-					<p class="text text--medium section-services__price">от 1490 р.</p>
-				</a>
-				<a href="" class="section-services__grid-item section-services__grid-item" style="background-image: url(img/service4.jpg)">
-					<div class="title title--h3 section-services__subtitle">Химчистка ковров и мебели</div>
-					<p class="text text--medium section-services__price">от 1490 р.</p>
-				</a>
-				<a href="" class="section-services__grid-item section-services__grid-item" style="background-image: url(img/service5.jpg)">
-					<div class="title title--h3 section-services__subtitle">Уборка квартир</div>
-					<p class="text text--medium section-services__price">от 1490 р.</p>
-				</a>
+		<section class="section-how section-how--flat">
+			<div class="container">
+				<div class="section-how__title title title--h2 text-center">Как мы делаем уборку квартиры</div>
+				<p class="section-how__text text text-center">Наш сотрудник приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат</p>
+			</div>
+			<div class="section-how__container container">
+				<div class="section-how__main">
+					<p class="section-how__tabs">
+						<button class="section-how__tab section-how__tab--active text text--medium" disabled>Комнаты</button>
+						<button class="section-how__tab text text--medium">Кухня</button>
+						<button class="section-how__tab text text--medium">Ванная</button>
+					</p>
+					<ul class="section-how__list list-reset">
+						<li class="section-how__item">
+							<img src="img/how-flat-1.jpg" alt="">
+							<ul class="section-how__inner-list list-reset">
+								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
+								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
+								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
+								<li class="section-how__inner-item section-how__inner-item--right">Застилаем кровать<br> и меняем белье</li>
+								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
+								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
+							</ul>
+						</li>
+						<li class="section-how__item">
+							<img src="img/how-flat-2.jpg" alt="">
+							<ul class="section-how__inner-list list-reset">
+								<li class="section-how__inner-item">Моем снаружи<br> плиту, вытяжку<br> и духовку</li>
+								<li class="section-how__inner-item">Моем столешницу<br> и кухонный фартук</li>
+								<li class="section-how__inner-item">Моем раковину<br> и посуду</li>
+								<li class="section-how__inner-item section-how__inner-item--right">Выносим мусор</li>
+								<li class="section-how__inner-item">Моем снаружи<br> холодильник</li>
+								<li class="section-how__inner-item">Протираем фасады<br> шкафов</li>
+							</ul>
+						</li>
+						<li class="section-how__item">
+							<img src="img/how-flat-3.jpg" alt="">
+							<ul class="section-how__inner-list list-reset">
+								<li class="section-how__inner-item">Протираем полки<br> и зеркала</li>
+								<li class="section-how__inner-item">Моем ванну,<br> душевую кабину</li>
+								<li class="section-how__inner-item">Очищаем плитку<br> от локальных пятен</li>
+								<li class="section-how__inner-item">Моем и оббезараживаем<br> сантехнику</li>
+								<li class="section-how__inner-item">Чистим унитаз</li>
+								<li class="section-how__inner-item">Пылесосим коврики<br> и моем пол</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<div class="section-how__bottom">
+					<p class="text text--small text--sm-medium">Поддерживающая уборка длится от 2 до 5 часов и содержит более 20 видов работ.</p>
+					<button class="section-how__button button button--small">Подробный перечень работ</button>
+				</div>
+			</div>
+			<div class="section-how__modal modal">
+				<div class="modal__wrap">
+					<div class="modal__inner">
+						<button class="modal__close">
+							<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+									<g id="My-house---Flat---pop-up" transform="translate(-1067.000000, -25.000000)" stroke="#0A1428">
+										<g id="Icon-/-16-/-Close" transform="translate(1066.000000, 24.000000)">
+											<g id="Close">
+												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6"></path>
+												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) "></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</button>
+						<div class="section-how__modal-title title title--h2">В поддерживающую уборку входит:</div>
+						<div class="section-how__modal-subtitle title title--h3">Комната и коридор</div>
+						<ul class="section-how__modal-list text">
+							<li>Удаляем пыль и моем все горизонтальные, вертикальные поверхности;</li>
+							<li>Моем и пылесосим полы и плинтусы;</li>
+							<li>Удаляем легкие загрязнения: жир, масло и т.д.;</li>
+							<li>Удаляем пыль со светильников;</li>
+							<li>Моем трубы, карнизы, фоторамки, рамы картин и т.д.;</li>
+							<li>Моем зеркала и стеклянные поверхности;</li>
+							<li>Ухаживаем за кожаной мебелью;</li>
+							<li>Меняем постельное белье;</li>
+							<li>Моем двери и дверные блоки.</li>
+						</ul>
+						<div class="section-how__modal-subtitle title title--h3">Кухня</div>
+						<ul class="section-how__modal-list text">
+							<li>Чистим и дезинфицируем горизонтальные рабочие поверхности;</li>
+							<li>Моем кухонную плиту и стену над ней;</li>
+							<li>Моем все вертикальные поверхности;</li>
+							<li>Чистим и обеззараживаем сантехнику;</li>
+							<li>Моем грязную посуду;</li>
+							<li>Моем холодильник снаружи;</li>
+							<li>Моем вытяжку снаружи;</li>
+							<li>Моем микроволновую печь снаружи и внутри;</li>
+							<li>Моем и обеззараживаем мусорную корзину, выносим мусор.</li>
+						</ul>
+						<div class="section-how__modal-subtitle title title--h3">Ванная комната</div>
+						<ul class="section-how__modal-list text">
+							<li>Чистим и обеззараживаем сантехнику и раковину;</li>
+							<li>Моем все зеркальные и стеклянные поверхности;</li>
+							<li>Моем душевую кабину и ванну (снаружи и внутри);</li>
+							<li>Кафельную плитку на стене очищаем локально.</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -284,127 +367,6 @@
 						</li>
 					</ul>
 					<button class="button section-reviews__button">Заказать уборку</button>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-how section-how--main">
-			<div class="container">
-				<div class="section-how__title title title--h2 text-center">Как мы делаем уборку квартиры</div>
-				<p class="section-how__text text text-center">Наш сотрудник приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат</p>
-			</div>
-			<div class="section-how__container container">
-				<div class="section-how__main">
-					<p class="section-how__tabs">
-						<button class="section-how__tab section-how__tab--active text text--medium" disabled>Комнаты</button>
-						<button class="section-how__tab text text--medium">Коридор</button>
-						<button class="section-how__tab text text--medium">Кухня</button>
-						<button class="section-how__tab text text--medium">Ванная</button>
-					</p>
-					<ul class="section-how__list list-reset">
-						<li class="section-how__item">
-							<img src="img/how.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
-								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
-								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
-								<li class="section-how__inner-item">Застилаем кровать<br> и меняем белье</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
-								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
-							</ul>
-						</li>
-						<li class="section-how__item">
-							<img src="img/how.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
-								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
-								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
-								<li class="section-how__inner-item">Застилаем кровать<br> и меняем белье</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
-								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
-							</ul>
-						</li>
-						<li class="section-how__item">
-							<img src="img/how.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
-								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
-								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
-								<li class="section-how__inner-item">Застилаем кровать<br> и меняем белье</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
-								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
-							</ul>
-						</li>
-						<li class="section-how__item">
-							<img src="img/how.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
-								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
-								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
-								<li class="section-how__inner-item">Застилаем кровать<br> и меняем белье</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
-								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="container">
-				<div class="section-how__bottom">
-					<p class="text text--small text--sm-medium">Поддерживающая уборка длится от 2 до 5 часов и содержит более 20 видов работ.</p>
-					<button class="section-how__button button button--small">Подробный перечень работ</button>
-				</div>
-			</div>
-			<div class="section-how__modal modal">
-				<div class="modal__wrap">
-					<div class="modal__inner">
-						<button class="modal__close">
-							<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-									<g id="My-house---Flat---pop-up" transform="translate(-1067.000000, -25.000000)" stroke="#0A1428">
-										<g id="Icon-/-16-/-Close" transform="translate(1066.000000, 24.000000)">
-											<g id="Close">
-												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6"></path>
-												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) "></path>
-											</g>
-										</g>
-									</g>
-								</g>
-							</svg>
-						</button>
-						<div class="section-how__modal-title title title--h2">В поддерживающую уборку входит:</div>
-						<div class="section-how__modal-subtitle title title--h3">Комната и коридор</div>
-						<ul class="section-how__modal-list text">
-							<li>Удаляем пыль и моем все горизонтальные, вертикальные поверхности;</li>
-							<li>Моем и пылесосим полы и плинтусы;</li>
-							<li>Удаляем легкие загрязнения: жир, масло и т.д.;</li>
-							<li>Удаляем пыль со светильников;</li>
-							<li>Моем трубы, карнизы, фоторамки, рамы картин и т.д.;</li>
-							<li>Моем зеркала и стеклянные поверхности;</li>
-							<li>Ухаживаем за кожаной мебелью;</li>
-							<li>Меняем постельное белье;</li>
-							<li>Моем двери и дверные блоки.</li>
-						</ul>
-						<div class="section-how__modal-subtitle title title--h3">Кухня</div>
-						<ul class="section-how__modal-list text">
-							<li>Чистим и дезинфицируем горизонтальные рабочие поверхности;</li>
-							<li>Моем кухонную плиту и стену над ней;</li>
-							<li>Моем все вертикальные поверхности;</li>
-							<li>Чистим и обеззараживаем сантехнику;</li>
-							<li>Моем грязную посуду;</li>
-							<li>Моем холодильник снаружи;</li>
-							<li>Моем вытяжку снаружи;</li>
-							<li>Моем микроволновую печь снаружи и внутри;</li>
-							<li>Моем и обеззараживаем мусорную корзину, выносим мусор.</li>
-						</ul>
-						<div class="section-how__modal-subtitle title title--h3">Ванная комната</div>
-						<ul class="section-how__modal-list text">
-							<li>Чистим и обеззараживаем сантехнику и раковину;</li>
-							<li>Моем все зеркальные и стеклянные поверхности;</li>
-							<li>Моем душевую кабину и ванну (снаружи и внутри);</li>
-							<li>Кафельную плитку на стене очищаем локально.</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 		</section>

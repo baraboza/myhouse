@@ -1,6 +1,6 @@
 $(function() {
 
-$('input[type=tel]').mask('+7 (999) 999-9999');
+$('input[type=tel]').mask('+7 (999) 999-99-99');
 
 // header
 	$('.header__toggle-menu').click(function() {

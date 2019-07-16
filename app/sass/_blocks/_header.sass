@@ -2,14 +2,16 @@
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08)
 	position: relative
 	z-index: 2
+	background-color: #fff
 
 	&__container
 		width: 100%
 		max-width: 1440px
 		margin: 0 auto
-		padding: 16px
+		padding: 0 16px
 		display: flex
 		align-items: center
+		height: 64px
 
 
 	&__logo
@@ -23,6 +25,9 @@
 		line-height: 24px
 		cursor: $pointer
 		margin-right: 32px
+		display: inline-flex
+		height: 100%
+		align-items: center
 
 		&--phone
 			opacity: 0.4
@@ -33,12 +38,19 @@
 	
 		&--active
 			color: #3E7FFF
-			text-decoration: underline
 			cursor: default
+			padding-top: 2px
+			border-bottom: 2px solid #3E7FFF
 			&:hover
-				text-decoration: underline
+				color: #3E7FFF
+
+			&:not([href]):not([tabindex])
+				color: #3E7FFF
+				&:hover
+					color: #3E7FFF
 
 	&__menu-mobile
+		height: 100%
 		flex-grow: 1
 		display: flex
 		align-items: center
@@ -47,9 +59,11 @@
 		flex-grow: 1
 		display: flex
 		align-items: center
+		height: 100%
 
 	&__nav
 		margin-right: auto
+		height: 100%
 
 	&__button
 		width: 136px
@@ -82,6 +96,7 @@
 		&__link
 			font-size: 22px
 			margin-bottom: 16px
+			height: auto
 
 		&__link--phone
 			font-size: 16px
@@ -96,6 +111,9 @@
 
 +media-breakpoint-down(sm)
 	.header
+
+		&__container
+			height: 51px
 
 		&__logo
 			margin-left: 0
