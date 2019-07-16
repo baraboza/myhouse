@@ -1,0 +1,70 @@
+.section-dry-clean
+	height: 560px
+	position: relative
+	display: flex
+	flex-direction: column
+	padding-bottom: 40px
+
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url('../img/dry-clean.jpg')
+		background-repeat: no-repeat
+		background-size: auto 100%
+		background-position: right
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
+		background-color: #f9f7f8
+
+	&__top
+		margin-top: auto
+
+	&__title
+		max-width: 365px
+		margin-bottom: 16px
+		margin-top: auto
+
+	&__text
+		max-width: 500px
+
+	&__bottom
+		margin-top: auto
+
++media-breakpoint-down(lg)
+	.section-dry-clean	
+		height: 450px
+
++media-breakpoint-down(md)
+	.section-dry-clean
+		height: 360px
+
++media-breakpoint-down(sm)
+	.section-dry-clean
+		height: auto
+		padding-bottom: 0
+
+		&::before
+			position: static
+			padding-top: 100%
+			background-image: url('../img/dry-clean-mobile.jpg')
+			background-size: 100% 100%
+			margin-bottom: 16px
+
+		&__title
+			max-width: none
+			width: 100%
+			position: absolute
+			top: 16px
+			left: 0
+			padding-left: 16px
+			padding-right: 16px
+			text-align: center
+
+		&__text
+			display: none
+
+		&__button
+			width: 100%

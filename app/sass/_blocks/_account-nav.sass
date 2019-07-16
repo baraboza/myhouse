@@ -1,0 +1,25 @@
+.account-nav
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+	&__link
+		margin-top: 8px
+		margin-bottom: 8px
+		color: $black
+
+		&:hover
+			text-decoration: none
+
+		&--active
+			color: $dark-blue
+			cursor: default
+
+			&:not([href]):not([tabindex])
+				color: $dark-blue
+				&:hover
+					color: $dark-blue
+
++media-breakpoint-down(md)
+	.account-nav
+		display: none

@@ -68,9 +68,11 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 	$(window).scroll(function() {
       if($(this).scrollTop() >= 1000) {
           $('.scroll-form').addClass('scroll-form--visible');
+          $('body').css('padding-bottom', $('.scroll-form').height() + 'px');
       }
       else{
           $('.scroll-form').removeClass('scroll-form--visible');
+          $('body').css('padding-bottom', 0);
       }
   });
 
@@ -79,6 +81,11 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 	$('.modal__close').click(function() {
 		$('.modal').fadeOut();
 		$("html,body").removeClass("overflow-hidden");
+	});
+
+// account-popup
+	$('.account-popup__close').click(function() {
+		$(this).parent().fadeOut();
 	});
 
 });

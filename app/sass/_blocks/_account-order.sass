@@ -1,0 +1,74 @@
+.account-order
+	background: url('../img/account-order.jpg') no-repeat
+	background-size: auto 100%
+	background-position: right
+	background-color: #f3f3f5
+	border-radius: 4px
+	padding: 16px 24px 24px
+	margin-bottom: 40px
+
+	&__title
+		margin-bottom: 66px
+
+	&__form
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		max-width: 484px
+		width: 100%
+
+	&__field
+		margin-bottom: 24px
+
+		&--type
+			width: 264px
+
+		&--range
+			width: 196px
+
+		&--date
+			width: 344px
+
+		&--time
+			width: 116px
+
+	&__button
+		width: 224px
+
++media-breakpoint-down(md)
+	.account-order
+		background: none
+		padding-left: 0
+		padding-right: 0
+		padding-bottom: 0
+
+		&__title
+			display: none
+
+		&__form
+			display: block
+			margin-left: auto
+			margin-right: auto
+
+		&__field
+			width: 100%
+
+		&__button
+			width: 100%
+
++media-breakpoint-down(sm)
+	.account-order
+		margin-bottom: 24px
+
+		&__form
+			max-width: none
+
+		&__field
+			margin-bottom: 16px
+			padding-top: 13px
+			padding-bottom: 13px
+
+		&__button
+			padding-top: 13px
+			padding-bottom: 15px

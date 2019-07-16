@@ -44,7 +44,7 @@
 			<div class="header__menu-mobile">
 				<div class="header__menu-tablet">
 					<nav class="header__nav">
-						<a href="" class="header__link">Уборка квартир</a>
+						<a class="header__link header__link--active">Уборка квартир</a>
 						<a href="" class="header__link">Уборка домов</a>
 						<a href="" class="header__link">Уборка офисов</a>
 					</nav>
@@ -61,26 +61,29 @@
 	</header>
 	
 	<main>
-		
-		<section class="section-first">
-			<div class="container">
-				<div class="section-first__inner">
-					<div class="title title--h1 section-first__title">Уборка квартир <br> от 1490 рублей</div>
-					<form action="">
-						<select name="" class="select section-first__input">
-							<option value="">Поддерживающая уборка</option>
-						</select>
-						<div class="section-first__input range">
-							Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
-							<span class="range__fill"></span>
-							<input type="range" min="0" max="90" value="40">
-						</div>
-						<input type="tel" class="input section-first__input" placeholder="Номер телефона">
-						<button class="button section-first__button">Рассчитать стоимость</button>
-					</form>
-				</div>
+
+		<section class="section-window">
+			<div class="section-window__top container">
+				<h1 class="section-window__title title title--h1">Мытье окон <br> от 1 590 рублей</h1>
+				<p class="section-window__text text text--medium">Моем с двух сторон с рамами, подоконниками, откосами, отливами и ручками.</p>
+			</div>
+			<div class="section-window__bottom container">
+				<a href="#" class="section-window__button button button--outline-small">Интересует химчистка мебели?</a>
 			</div>
 		</section>
+
+		<form action="" class="container form-row">
+			<div class="form-row__input range">
+				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
+				<span class="range__fill"></span>
+				<input type="range" min="0" max="90" value="40">
+			</div>
+			<select name="" class="form-row__input select">
+				<option value="">Тип окон</option>
+			</select>
+			<input type="tel" class="form-row__input input" placeholder="Номер телефона">
+			<button class="form-row__button button">Рассчитать стоимость</button>
+		</form>
 
 		<section class="section-services container">
 			<div class="section-services__title title title--h2 text-center">Закажите уборку, остальное – наша забота</div>
@@ -106,84 +109,6 @@
 					<div class="title title--h3 section-services__subtitle">Уборка квартир</div>
 					<p class="text text--medium section-services__price">от 1490 р.</p>
 				</a>
-			</div>
-		</section>
-
-		<section class="section-advantages container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="section-advantages__item">
-						<svg class="section-advantages__image" width="52px" height="80px" viewBox="0 0 52 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="My-house-site" transform="translate(-287.000000, -1456.000000)">
-									<g id="Group-2" transform="translate(273.000000, 1456.000000)">
-										<path d="M15,62.8727273 L15,55 C15,50.581722 18.581722,47 23,47 L27.5634766,47 C30.8098958,50.4052734 34.9554036,52.1079102 40,52.1079102 C45.0445964,52.1079102 48.8990885,50.4052734 51.5634766,47 L56.5634766,47 C60.9817546,47 64.5634766,50.581722 64.5634766,55 L64.5634766,62.8727273 L58,62.8727273 C59.5454102,67.598038 58.7332357,71.1988932 55.5634766,73.675293 L55.5634766,78.3071289 L23.8862305,78.3071289 L23.8862305,73.675293 C21.1912435,70.5733043 20.5895996,66.9724491 22.0812988,62.8727273 L15,62.8727273 Z" id="Path-10" fill="#E2F3FB"></path>
-										<path d="M27.5452731,42.1216137 C23.8679562,38.7404108 21.5634766,33.8893254 21.5634766,28.5 L21.5634766,19.5 C21.5634766,9.28273213 29.8462087,1 40.0634766,1 L40.0634766,1 C50.2807444,1 58.5634766,9.28273213 58.5634766,19.5 L58.5634766,28.5 C58.5634766,33.8416256 56.2996093,38.6544967 52.6789983,42.0314899" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M52.5634766,22.9962319 L52.5634766,28.5 C52.5634766,35.4035594 46.9670359,41 40.0634766,41 C33.1599172,41 27.5634766,35.4035594 27.5634766,28.5 L27.5634766,18.5 C27.5634766,16.3127588 28.1252473,14.2567261 29.1123747,12.4683163 C34.9485984,18.8279019 43.2847179,22.8562927 52.5634766,22.9962319 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M15,78.3071289 L15,54.8217773 C15,50.4034993 18.581722,46.8217773 23,46.8217773 L30.5629883,46.8217773 C32.7721273,46.8217773 34.5629883,45.0309163 34.5629883,42.8217773 L34.5629883,40.2333984" id="Path-6" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M45,78.3071289 L45,54.8217773 C45,50.4034993 48.581722,46.8217773 53,46.8217773 L60.5629883,46.8217773 C62.7721273,46.8217773 64.5629883,45.0309163 64.5629883,42.8217773 L64.5629883,40.2333984" id="Path-6" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(54.781494, 59.270264) scale(-1, 1) translate(-54.781494, -59.270264) "></path>
-										<path d="M27.5634766,47 C30.5794271,50.3333333 34.5794271,52 39.5634766,52 C44.547526,52 48.547526,50.3333333 51.5634766,47 L51.5634766,64 L27.5634766,64 L27.5634766,47 Z" id="Rectangle" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<polyline id="Path-7" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="27.5634766 64 23.8862305 73.675293 23.8862305 78.3071289"></polyline>
-										<polyline id="Path-7" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(53.724854, 71.153564) scale(-1, 1) translate(-53.724854, -71.153564) " points="55.5634766 64 51.8862305 73.675293 51.8862305 78.3071289"></polyline>
-										<path d="M23.8862305,73.675293 C20.4946289,69.5603841 20.4946289,64.9012044 23.8862305,59.6977539" id="Path-8" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M15,62.8727273 L21.5634766,62.8727273" id="Path-9" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M58.8862305,73.675293 C55.4946289,69.5603841 55.4946289,64.9012044 58.8862305,59.6977539" id="Path-8" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(57.614380, 66.686523) scale(-1, 1) translate(-57.614380, -66.686523) "></path>
-										<path d="M58,62.8727273 L64.5634766,62.8727273" id="Path-9" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-									</g>
-								</g>
-							</g>
-						</svg>
-						<div>
-							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
-							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="section-advantages__item">
-						<svg class="section-advantages__image" width="63px" height="78px" viewBox="0 0 63 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="My-house-site" transform="translate(-688.000000, -1457.000000)">
-									<g id="Group-2-Copy" transform="translate(680.000000, 1456.000000)">
-										<path d="M21,42.8607595 L21,20.4556962 L44,14 L63,19.3329664 L63,38.8607595 C63,52.9113924 53.4166667,65.8227848 40,70 C36.3430654,68.8614308 32.9709187,67.0739776 30,64.7914384 L30,65.1665299 C24.4061282,59.2090602 21,51.2373655 21,42.8607595 Z" id="Path" fill="#E2F3FB"></path>
-										<path d="M39.5,2 L9,10.74 L9,38.86 C9,56.72 21.2,72.68 38.35625,77.62 L39.5,78 L40.64375,77.62 C57.8,72.68 70,56.72 70,38.86 L70,10.74 L39.5,2 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M63,38.8607595 C63,52.9113924 53.4166667,65.8227848 40,70 C26.5833333,65.8227848 17,52.9113924 17,38.8607595 L17,16.4556962 L40,10 L63,16.4556962 L63,38.8607595 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<polygon id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="29.3164557 34.2786885 24 39.557377 36.5316456 52 54 34.2786885 48.6835443 29 36.5316456 41.0655738"></polygon>
-									</g>
-								</g>
-							</g>
-						</svg>
-						<div>
-							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
-							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="section-advantages__item">
-						<svg class="section-advantages__image" width="74px" height="70px" viewBox="0 0 74 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="My-house-site" transform="translate(-1090.000000, -1463.000000)">
-									<g id="Group-2-Copy-2" transform="translate(1087.000000, 1456.000000)">
-										<polygon id="Rectangle" fill="#E2F3FB" points="8 12 76 12 76 58 8 58"></polygon>
-										<path d="M48.0400391,58 L4,58 L4,8 L28,8 M52,8 L76,8 L76,58 L64.0473633,58" id="Shape" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<circle id="Oval" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" cx="56" cy="45" r="13"></circle>
-										<path d="M51.1055309,48.5060435 L51.1052246,41.8018239 C51.5891242,41.8028189 51.918057,41.8022309 52.0920231,41.8000599 C52.2433476,41.7981884 52.3039299,41.8283903 52.3819073,41.9374684 C52.9330015,42.70839 55.1524746,45.7892889 55.1795813,45.826111 C55.6406899,46.4454246 56.3863709,46.4494653 56.8402668,45.8139435 C57.1276287,45.411705 59.3649475,42.2775843 59.614349,41.9230505 C59.680457,41.8290736 59.7379536,41.800571 59.8824703,41.8011604 C60.0299757,41.8017395 60.3684891,41.8018964 60.8980103,41.8016309 L60.8979972,48.505131" id="Shape" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<polyline id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="64 56 64 76 56 68 48 76 48 56"></polyline>
-										<path d="M13,19 L52,19" id="Path-5" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M13,29 L40,29" id="Path-5-Copy" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M13,39 L35,39" id="Path-5-Copy-2" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path d="M39,8 L41,8" id="Path-5-Copy-3" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-									</g>
-								</g>
-							</g>
-						</svg>
-						<div>
-							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
-							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 
@@ -288,141 +213,82 @@
 			</div>
 		</section>
 
-		<section class="section-how section-how--flat">
-			<div class="container">
-				<div class="section-how__title title title--h2 text-center">Как мы делаем уборку квартиры</div>
-				<p class="section-how__text text text-center">Наш сотрудник приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат</p>
-			</div>
-			<div class="section-how__container container">
-				<div class="section-how__main">
-					<p class="section-how__tabs">
-						<button class="section-how__tab section-how__tab--active text text--medium" disabled>Комнаты</button>
-						<button class="section-how__tab text text--medium">Кухня</button>
-						<button class="section-how__tab text text--medium">Ванная</button>
-					</p>
-					<ul class="section-how__list list-reset">
-						<li class="section-how__item">
-							<img src="img/how-flat-1.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем стеклянные<br> поверхности<br> и зеркала</li>
-								<li class="section-how__inner-item">Раскладываем вещи<br> по местам</li>
-								<li class="section-how__inner-item">Моем пол<br> и протираем<br> плинтусы</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Застилаем кровать<br> и меняем белье</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Протираем все доступные<br> поверхности</li>
-								<li class="section-how__inner-item">Пылесосим снаружи мягкую мебель</li>
-							</ul>
-						</li>
-						<li class="section-how__item">
-							<img src="img/how-flat-2.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Моем снаружи<br> плиту, вытяжку<br> и духовку</li>
-								<li class="section-how__inner-item">Моем столешницу<br> и кухонный фартук</li>
-								<li class="section-how__inner-item">Моем раковину<br> и посуду</li>
-								<li class="section-how__inner-item section-how__inner-item--right">Выносим мусор</li>
-								<li class="section-how__inner-item">Моем снаружи<br> холодильник</li>
-								<li class="section-how__inner-item">Протираем фасады<br> шкафов</li>
-							</ul>
-						</li>
-						<li class="section-how__item">
-							<img src="img/how-flat-3.jpg" alt="">
-							<ul class="section-how__inner-list list-reset">
-								<li class="section-how__inner-item">Протираем полки<br> и зеркала</li>
-								<li class="section-how__inner-item">Моем ванну,<br> душевую кабину</li>
-								<li class="section-how__inner-item">Очищаем плитку<br> от локальных пятен</li>
-								<li class="section-how__inner-item">Моем и оббезараживаем<br> сантехнику</li>
-								<li class="section-how__inner-item">Чистим унитаз</li>
-								<li class="section-how__inner-item">Пылесосим коврики<br> и моем пол</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="container">
-				<div class="section-how__bottom">
-					<p class="text text--small text--sm-medium">Поддерживающая уборка длится от 2 до 5 часов и содержит более 20 видов работ.</p>
-					<button class="section-how__button button button--small">Подробный перечень работ</button>
-				</div>
-			</div>
-			<div class="section-how__modal modal">
-				<div class="modal__wrap">
-					<div class="modal__inner">
-						<button class="modal__close">
-							<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-									<g id="My-house---Flat---pop-up" transform="translate(-1067.000000, -25.000000)" stroke="#0A1428">
-										<g id="Icon-/-16-/-Close" transform="translate(1066.000000, 24.000000)">
-											<g id="Close">
-												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6"></path>
-												<path d="M2,2 L14,14" id="Path-11" stroke-width="1.6" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) "></path>
-											</g>
-										</g>
+		<section class="section-advantages container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="section-advantages__item">
+						<svg class="section-advantages__image" width="52px" height="80px" viewBox="0 0 52 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="My-house-site" transform="translate(-287.000000, -1456.000000)">
+									<g id="Group-2" transform="translate(273.000000, 1456.000000)">
+										<path d="M15,62.8727273 L15,55 C15,50.581722 18.581722,47 23,47 L27.5634766,47 C30.8098958,50.4052734 34.9554036,52.1079102 40,52.1079102 C45.0445964,52.1079102 48.8990885,50.4052734 51.5634766,47 L56.5634766,47 C60.9817546,47 64.5634766,50.581722 64.5634766,55 L64.5634766,62.8727273 L58,62.8727273 C59.5454102,67.598038 58.7332357,71.1988932 55.5634766,73.675293 L55.5634766,78.3071289 L23.8862305,78.3071289 L23.8862305,73.675293 C21.1912435,70.5733043 20.5895996,66.9724491 22.0812988,62.8727273 L15,62.8727273 Z" id="Path-10" fill="#E2F3FB"></path>
+										<path d="M27.5452731,42.1216137 C23.8679562,38.7404108 21.5634766,33.8893254 21.5634766,28.5 L21.5634766,19.5 C21.5634766,9.28273213 29.8462087,1 40.0634766,1 L40.0634766,1 C50.2807444,1 58.5634766,9.28273213 58.5634766,19.5 L58.5634766,28.5 C58.5634766,33.8416256 56.2996093,38.6544967 52.6789983,42.0314899" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M52.5634766,22.9962319 L52.5634766,28.5 C52.5634766,35.4035594 46.9670359,41 40.0634766,41 C33.1599172,41 27.5634766,35.4035594 27.5634766,28.5 L27.5634766,18.5 C27.5634766,16.3127588 28.1252473,14.2567261 29.1123747,12.4683163 C34.9485984,18.8279019 43.2847179,22.8562927 52.5634766,22.9962319 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15,78.3071289 L15,54.8217773 C15,50.4034993 18.581722,46.8217773 23,46.8217773 L30.5629883,46.8217773 C32.7721273,46.8217773 34.5629883,45.0309163 34.5629883,42.8217773 L34.5629883,40.2333984" id="Path-6" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M45,78.3071289 L45,54.8217773 C45,50.4034993 48.581722,46.8217773 53,46.8217773 L60.5629883,46.8217773 C62.7721273,46.8217773 64.5629883,45.0309163 64.5629883,42.8217773 L64.5629883,40.2333984" id="Path-6" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(54.781494, 59.270264) scale(-1, 1) translate(-54.781494, -59.270264) "></path>
+										<path d="M27.5634766,47 C30.5794271,50.3333333 34.5794271,52 39.5634766,52 C44.547526,52 48.547526,50.3333333 51.5634766,47 L51.5634766,64 L27.5634766,64 L27.5634766,47 Z" id="Rectangle" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<polyline id="Path-7" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="27.5634766 64 23.8862305 73.675293 23.8862305 78.3071289"></polyline>
+										<polyline id="Path-7" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(53.724854, 71.153564) scale(-1, 1) translate(-53.724854, -71.153564) " points="55.5634766 64 51.8862305 73.675293 51.8862305 78.3071289"></polyline>
+										<path d="M23.8862305,73.675293 C20.4946289,69.5603841 20.4946289,64.9012044 23.8862305,59.6977539" id="Path-8" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15,62.8727273 L21.5634766,62.8727273" id="Path-9" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M58.8862305,73.675293 C55.4946289,69.5603841 55.4946289,64.9012044 58.8862305,59.6977539" id="Path-8" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(57.614380, 66.686523) scale(-1, 1) translate(-57.614380, -66.686523) "></path>
+										<path d="M58,62.8727273 L64.5634766,62.8727273" id="Path-9" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
 									</g>
 								</g>
-							</svg>
-						</button>
-						<div class="section-how__modal-title title title--h2">В поддерживающую уборку входит:</div>
-						<div class="section-how__modal-subtitle title title--h3">Комната и коридор</div>
-						<ul class="section-how__modal-list text">
-							<li>Удаляем пыль и моем все горизонтальные, вертикальные поверхности;</li>
-							<li>Моем и пылесосим полы и плинтусы;</li>
-							<li>Удаляем легкие загрязнения: жир, масло и т.д.;</li>
-							<li>Удаляем пыль со светильников;</li>
-							<li>Моем трубы, карнизы, фоторамки, рамы картин и т.д.;</li>
-							<li>Моем зеркала и стеклянные поверхности;</li>
-							<li>Ухаживаем за кожаной мебелью;</li>
-							<li>Меняем постельное белье;</li>
-							<li>Моем двери и дверные блоки.</li>
-						</ul>
-						<div class="section-how__modal-subtitle title title--h3">Кухня</div>
-						<ul class="section-how__modal-list text">
-							<li>Чистим и дезинфицируем горизонтальные рабочие поверхности;</li>
-							<li>Моем кухонную плиту и стену над ней;</li>
-							<li>Моем все вертикальные поверхности;</li>
-							<li>Чистим и обеззараживаем сантехнику;</li>
-							<li>Моем грязную посуду;</li>
-							<li>Моем холодильник снаружи;</li>
-							<li>Моем вытяжку снаружи;</li>
-							<li>Моем микроволновую печь снаружи и внутри;</li>
-							<li>Моем и обеззараживаем мусорную корзину, выносим мусор.</li>
-						</ul>
-						<div class="section-how__modal-subtitle title title--h3">Ванная комната</div>
-						<ul class="section-how__modal-list text">
-							<li>Чистим и обеззараживаем сантехнику и раковину;</li>
-							<li>Моем все зеркальные и стеклянные поверхности;</li>
-							<li>Моем душевую кабину и ванну (снаружи и внутри);</li>
-							<li>Кафельную плитку на стене очищаем локально.</li>
-						</ul>
+							</g>
+						</svg>
+						<div>
+							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
+							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="section-advantages__item">
+						<svg class="section-advantages__image" width="63px" height="78px" viewBox="0 0 63 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="My-house-site" transform="translate(-688.000000, -1457.000000)">
+									<g id="Group-2-Copy" transform="translate(680.000000, 1456.000000)">
+										<path d="M21,42.8607595 L21,20.4556962 L44,14 L63,19.3329664 L63,38.8607595 C63,52.9113924 53.4166667,65.8227848 40,70 C36.3430654,68.8614308 32.9709187,67.0739776 30,64.7914384 L30,65.1665299 C24.4061282,59.2090602 21,51.2373655 21,42.8607595 Z" id="Path" fill="#E2F3FB"></path>
+										<path d="M39.5,2 L9,10.74 L9,38.86 C9,56.72 21.2,72.68 38.35625,77.62 L39.5,78 L40.64375,77.62 C57.8,72.68 70,56.72 70,38.86 L70,10.74 L39.5,2 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M63,38.8607595 C63,52.9113924 53.4166667,65.8227848 40,70 C26.5833333,65.8227848 17,52.9113924 17,38.8607595 L17,16.4556962 L40,10 L63,16.4556962 L63,38.8607595 Z" id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<polygon id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="29.3164557 34.2786885 24 39.557377 36.5316456 52 54 34.2786885 48.6835443 29 36.5316456 41.0655738"></polygon>
+									</g>
+								</g>
+							</g>
+						</svg>
+						<div>
+							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
+							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="section-advantages__item">
+						<svg class="section-advantages__image" width="74px" height="70px" viewBox="0 0 74 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="My-house-site" transform="translate(-1090.000000, -1463.000000)">
+									<g id="Group-2-Copy-2" transform="translate(1087.000000, 1456.000000)">
+										<polygon id="Rectangle" fill="#E2F3FB" points="8 12 76 12 76 58 8 58"></polygon>
+										<path d="M48.0400391,58 L4,58 L4,8 L28,8 M52,8 L76,8 L76,58 L64.0473633,58" id="Shape" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<circle id="Oval" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" cx="56" cy="45" r="13"></circle>
+										<path d="M51.1055309,48.5060435 L51.1052246,41.8018239 C51.5891242,41.8028189 51.918057,41.8022309 52.0920231,41.8000599 C52.2433476,41.7981884 52.3039299,41.8283903 52.3819073,41.9374684 C52.9330015,42.70839 55.1524746,45.7892889 55.1795813,45.826111 C55.6406899,46.4454246 56.3863709,46.4494653 56.8402668,45.8139435 C57.1276287,45.411705 59.3649475,42.2775843 59.614349,41.9230505 C59.680457,41.8290736 59.7379536,41.800571 59.8824703,41.8011604 C60.0299757,41.8017395 60.3684891,41.8018964 60.8980103,41.8016309 L60.8979972,48.505131" id="Shape" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<polyline id="Path" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="64 56 64 76 56 68 48 76 48 56"></polyline>
+										<path d="M13,19 L52,19" id="Path-5" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13,29 L40,29" id="Path-5-Copy" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M13,39 L35,39" id="Path-5-Copy-2" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M39,8 L41,8" id="Path-5-Copy-3" stroke="#0A1428" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</g>
+							</g>
+						</svg>
+						<div>
+							<div class="section-advantages__subtitle title title--h3">Профессиональные исполнители</div>
+							<p class="section-advantages__text text text--medium text--sm">Все сотрудники прошли специальное обучение, носят униформу и всегда выглядят аккуратно. Услуга может оказываться одним человеком или бригадой клинеров.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<section class="section-prices container">
-			<div class="section-prices__title title title--h2">Сколько стоит уборка квартиры</div>
-			<ul class="section-prices__list list-reset row">
-				<li class="section-prices__item col-md-4">
-					<div class="section-prices__item-inner">
-						<p class="section-prices__subtitle text text--md">Поддерживающая</p>
-						<p class="section-prices__price title title--h1 title--md-h1">от 1890 р.</p>
-						<button class="section-prices__button button button--small">Заказать уборку</button>
-					</div>
-				</li>
-				<li class="section-prices__item col-md-4">
-					<div class="section-prices__item-inner">
-						<p class="section-prices__subtitle text text--md">Генеральная</p>
-						<p class="section-prices__price title title--h1 title--md-h1">от 2690 р.</p>
-						<button class="section-prices__button button button--small">Заказать уборку</button>
-					</div>
-				</li>
-				<li class="section-prices__item col-md-4">
-					<div class="section-prices__item-inner">
-						<p class="section-prices__subtitle text text--md">После ремонта</p>
-						<p class="section-prices__price title title--h1 title--md-h1">от 4800 р.</p>
-						<button class="section-prices__button button button--small">Заказать уборку</button>
-					</div>
-				</li>
-			</ul>
-			<p class="section-prices__bottom-text text text--small text--sm-medium">Стоимость уборки квартиры с одним санузлом раз в неделю на постоянной основе</p>
 		</section>
 
 		<section class="section-questions">

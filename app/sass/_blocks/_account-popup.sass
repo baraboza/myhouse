@@ -1,0 +1,24 @@
+.account-popup
+	width: 376px
+	padding: 18px 48px 18px 56px
+	background: url('../img/done.svg') no-repeat
+	background-position: 16px 16px
+	position: fixed
+	bottom: 24px
+	left: 24px
+	border-radius: 4px
+	background-color: #fff
+	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.16)
+	z-index: 1
+
+	&__close
+		position: absolute
+		top: 16px
+		right: 16px
+		background: none
+		border: none
+		cursor: pointer
+
++media-breakpoint-down(md)
+	.account-popup
+		display: none

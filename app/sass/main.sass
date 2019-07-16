@@ -18,6 +18,7 @@ body
 
 main
 	margin-bottom: auto
+	padding-bottom: 52px
 
 img
 	max-width: 100%
@@ -29,6 +30,8 @@ a
 	&:hover
 		color: #3E7FFF
 		text-decoration: underline
+	&:not([href]):not([tabindex])
+		cursor: default
 
 .text-center
 	text-align: center
@@ -64,5 +67,12 @@ a
 @import "_blocks/footer"
 
 @import "_blocks/section-login"
+@import "_blocks/account"
+@import "_blocks/account-nav"
+@import "_blocks/account-order"
+@import "_blocks/account-discounts"
+@import "_blocks/account-popup"
+@import "_blocks/section-window"
+@import "_blocks/section-dry-clean"
 
 @import "media" // Always at the end

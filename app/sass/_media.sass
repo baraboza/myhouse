@@ -5,12 +5,19 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	body
+		padding-bottom: 0 !important // чтобы убрать отступ, который добавляется для формы, появляюшейся при скролле
 
 // ≥992px
 +media-breakpoint-down(md)
+	main
+		padding-bottom: 40px
 
 // ≥768px
 +media-breakpoint-down(sm)
+	main
+		padding-bottom: 20px
+
 	.container
 		padding-left: 16px !important
 		padding-right: 16px !important
