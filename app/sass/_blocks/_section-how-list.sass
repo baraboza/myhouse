@@ -1,0 +1,72 @@
+.section-how-list
+	max-width: 674px
+	padding-left: 20px
+	padding-right: 20px
+	margin: 0 auto
+	padding-top: 52px
+	padding-bottom: 52px
+
+	&__title
+		text-align: center
+		margin-bottom: 40px
+
+	&__list
+		counter-reset: li
+
+	&__item
+		position: relative
+		padding-left: 64px
+		padding-top: 4px
+
+		&::before
+			counter-increment: li
+			content: counter(li)
+			position: absolute
+			left: 0
+			top: 0
+			width: 40px
+			height: 40px
+			background-color: #3E7FFF
+			line-height: 40px
+			text-align: center
+			font-weight: 500
+			color: #fff
+			font-size: 16px
+			border-radius: 50%
+			z-index: 1
+
+		
+		&:not(:last-of-type)
+			padding-bottom: 28px
+
+			&::after
+				content: ''
+				width: 2px
+				height: 100%
+				position: absolute
+				left: 19px
+				top: 0
+				background-color: #F4F4F6
+
+	&__subtitle
+		margin-bottom: 8px
+
++media-breakpoint-down(md)
+	.section-how-list
+		padding-top: 40px
+		padding-bottom: 40px
+
++media-breakpoint-down(sm)
+	.section-how-list
+		padding-top: 20px
+		padding-bottom: 20px
+
+		&__title
+			margin-bottom: 16px
+
+		&__item
+			padding-top: 12px
+			padding-left: 56px
+
+			&:not(:last-of-type)
+				padding-bottom: 8px

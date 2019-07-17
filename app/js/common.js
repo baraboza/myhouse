@@ -88,4 +88,12 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 		$(this).parent().fadeOut();
 	});
 
+// page-dry-clean
+	$('.page-dry-clean .section-services__grid-item').click(function(e) {
+		e.preventDefault();
+		var index = $('.page-dry-clean .section-services__grid-item').index($(this));
+		$('.section-services__modal').eq(index).fadeIn();
+		$("html,body").addClass("overflow-hidden");
+	});
+
 });
