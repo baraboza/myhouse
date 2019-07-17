@@ -1,0 +1,18 @@
+.scroll-button
+	border-radius: 0
+	position: fixed
+	width: 100vw
+	bottom: 0
+	left: 0
+	display: none
+	z-index: 1
+
+	&--visible
+		display: block
+
++media-breakpoint-up(xl)
+	.scroll-button
+
+		&--visible
+			display: none
+

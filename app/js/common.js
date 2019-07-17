@@ -64,17 +64,17 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 	});
 
 
-// scroll-form
+// scroll-form & scroll-button
 	$(window).scroll(function() {
-      if($(this).scrollTop() >= 1000) {
-          $('.scroll-form').addClass('scroll-form--visible');
-          $('body').css('padding-bottom', $('.scroll-form').height() + 'px');
-      }
-      else{
-          $('.scroll-form').removeClass('scroll-form--visible');
-          $('body').css('padding-bottom', 0);
-      }
-  });
+		if($(this).scrollTop() >= 1000) {
+			$('.scroll-form').addClass('scroll-form--visible');
+			$('.scroll-button').addClass('scroll-button--visible');
+		}
+		else{
+			$('.scroll-form').removeClass('scroll-form--visible');
+			$('.scroll-button').removeClass('scroll-button--visible');
+		}
+	});
 
 
 // modal
@@ -83,10 +83,12 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 		$("html,body").removeClass("overflow-hidden");
 	});
 
+
 // account-popup
 	$('.account-popup__close').click(function() {
 		$(this).parent().fadeOut();
 	});
+
 
 // page-dry-clean
 	$('.page-dry-clean .section-services__grid-item').click(function(e) {
