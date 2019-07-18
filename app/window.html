@@ -72,7 +72,8 @@
 			</div>
 		</section>
 
-		<form action="" class="container form-row calc-window">
+		<form class="send-ajax container form-row calc-window">
+			<input type="hidden" name="page" value="window">
 			<div class="form-row__input range">
 				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 				<span class="range__fill"></span>
@@ -86,8 +87,8 @@
 					<option value="double-two">Двойные, с двух сторон</option>
 				</select>
 			</div>
-			<input name="phone" type="tel" class="form-row__input input" placeholder="Номер телефона">
-			<button class="form-row__button button">Заказать за <span class="calc-window__value">990</span> руб.</button>
+			<input name="phone" type="tel" class="form-row__input input" placeholder="Номер телефона" required>
+			<button type="submit" class="form-row__button button">Заказать за <span class="calc-window__value">990</span> руб.</button>
 		</form>
 
 		<section class="section-how section-how--window">
@@ -580,23 +581,24 @@
 		</div>
 	</footer>
 
-	<form action="" class="scroll-form calc-window">
+	<form class="send-ajax scroll-form calc-window">
+		<input type="hidden" name="page" value="window">
 		<div class="scroll-form__container container">
 			<div class="range scroll-form__input">
 				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 				<span class="range__fill"></span>
-				<input type="range" step="10" min="40" max="40" value="40" class="calc-window__range">
+				<input name="range" type="range" step="10" min="40" max="40" value="40" class="calc-window__range">
 			</div>
 			<div class="select scroll-form__select">
-				<select name="" class="calc-window__type">
+				<select name="type" class="calc-window__type">
 					<option selected disabled>Тип окон</option>
 					<option value="solid-one">Цельные, с одной стороны</option>
 					<option value="solid-two">Цельные, с двух сторон</option>
 					<option value="double-two">Двойные, с двух сторон</option>
 				</select>
 			</div>
-			<input type="tel" class="input scroll-form__input" placeholder="Номер телефона">
-			<button class="button scroll-form__button">Заказать за <span class="calc-window__value">990</span> руб.</button>
+			<input name="phone" type="tel" class="input scroll-form__input" placeholder="Номер телефона" required>
+			<button type="submit" class="button scroll-form__button">Заказать за <span class="calc-window__value">990</span> руб.</button>
 		</div>
 	</form>
 

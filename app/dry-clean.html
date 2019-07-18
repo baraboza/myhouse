@@ -73,7 +73,8 @@
 			</div>
 		</section>
 
-		<form action="" class="container form-row calc-dry">
+		<form class="send-ajax container form-row calc-dry">
+			<input type="hidden" name="page" value="dry-clean">
 			<div class="form-row__input select">
 				<select name="type" class="calc-dry__type">
 					<option selected disabled>Услуга</option>
@@ -130,7 +131,7 @@
 					<option value="serv51">Подушка (маленькая, диванная)</option>
 				</select>
 			</div>
-			<input type="tel" class="form-row__input input" placeholder="Номер телефона">
+			<input name="phone" type="tel" class="form-row__input input" placeholder="Номер телефона" required>
 			<button type="submit" class="form-row__button button">Заказать за <span class="calc-dry__value">1490</span> руб.</button>
 		</form>
 
@@ -1099,10 +1100,11 @@
 		</div>
 	</footer>
 
-	<form action="" class="scroll-form calc-dry">
+	<form class="send-ajax scroll-form calc-dry">
+		<input type="hidden" name="page" value="dry-clean">
 		<div class="scroll-form__container container">
 			<div class="select scroll-form__select">
-				<select name="" class="calc-dry__type">
+				<select name="type" class="calc-dry__type">
 					<option selected disabled>Услуга</option>
 					<option value="serv1">Ковролин (1 кв. м.)</option>
 					<option value="serv2">Удаление запаха урины (5 кв.м.)</option>
@@ -1157,8 +1159,8 @@
 					<option value="serv51">Подушка (маленькая, диванная)</option>
 				</select>
 			</div>
-			<input type="tel" class="input scroll-form__input" placeholder="Номер телефона">
-			<button class="button scroll-form__button">Заказать за <span class="calc-dry__value">1490</span> руб.</button>
+			<input name="phone" type="tel" class="input scroll-form__input" placeholder="Номер телефона" required>
+			<button type="submit" class="button scroll-form__button">Заказать за <span class="calc-dry__value">1490</span> руб.</button>
 		</div>
 	</form>
 

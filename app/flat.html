@@ -71,9 +71,10 @@
 			</div>
 		</section>
 		
-		<form action="" class="container form-row calc-flat">
+		<form class="send-ajax container form-row calc-flat">
+			<input type="hidden" name="page" value="flat">
 			<div class="form-row__input select">
-				<select name="" class="calc-flat__type">
+				<select name="type" class="calc-flat__type">
 					<option value="support">Поддерживающая уборка</option>
 					<option value="general">Генеральная уборка</option>
 				</select>
@@ -81,10 +82,10 @@
 			<div class="form-row__input range">
 				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 				<span class="range__fill"></span>
-				<input type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
+				<input name="range" type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
 			</div>
-			<input type="tel" class="form-row__input input" placeholder="Номер телефона">
-			<button class="form-row__button button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
+			<input name="phone" type="tel" class="form-row__input input" placeholder="Номер телефона" required>
+			<button type="submit" class="form-row__button button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
 		</form>
 
 		<section class="section-how section-how--flat">
@@ -633,10 +634,11 @@
 		</div>
 	</footer>
 
-	<form action="" class="scroll-form calc-flat">
+	<form class="send-ajax scroll-form calc-flat">
+		<input type="hidden" name="page" value="flat">
 		<div class="scroll-form__container container">
 			<div class="select scroll-form__select">
-				<select name="" class="calc-flat__type">
+				<select name="type" class="calc-flat__type">
 					<option value="support">Поддерживающая уборка</option>
 					<option value="general">Генеральная уборка</option>
 				</select>
@@ -644,10 +646,10 @@
 			<div class="range scroll-form__input">
 				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 				<span class="range__fill"></span>
-				<input type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
+				<input name="range" type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
 			</div>
-			<input type="tel" class="input scroll-form__input" placeholder="Номер телефона">
-			<button class="button scroll-form__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
+			<input name="phone" type="tel" class="input scroll-form__input" placeholder="Номер телефона" required>
+			<button type="submit" class="button scroll-form__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
 		</div>
 	</form>
 

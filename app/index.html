@@ -66,9 +66,10 @@
 			<div class="container">
 				<div class="section-first__inner">
 					<div class="title title--h1 section-first__title">Уборка квартир <br> от 1990 рублей</div>
-					<form action="send.php" method="post" class="calc-flat">
+					<form class="send-ajax calc-flat">
+						<input type="hidden" name="page" value="index">
 						<div class="select section-first__input">
-							<select name="" class="calc-flat__type">
+							<select name="type" class="calc-flat__type">
 								<option value="support">Поддерживающая уборка</option>
 								<option value="general">Генеральная уборка</option>
 							</select>
@@ -76,10 +77,10 @@
 						<div class="section-first__input range">
 							Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 							<span class="range__fill"></span>
-							<input type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
+							<input name="range" type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
 						</div>
-						<input type="tel" class="input section-first__input" placeholder="Номер телефона">
-						<button class="button section-first__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
+						<input name="phone" type="tel" class="input section-first__input" placeholder="Номер телефона" required>
+						<button type="submit" class="button section-first__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
 					</form>
 				</div>
 			</div>
@@ -663,10 +664,11 @@
 		</div>
 	</footer>
 
-	<form action="" class="scroll-form calc-flat">
+	<form class="send-ajax scroll-form calc-flat">
+		<input type="hidden" name="page" value="index">
 		<div class="scroll-form__container container">
 			<div class="select scroll-form__select">
-				<select name="" class="calc-flat__type">
+				<select name="type" class="calc-flat__type">
 					<option value="support">Поддерживающая уборка</option>
 					<option value="general">Генеральная уборка</option>
 				</select>
@@ -674,10 +676,10 @@
 			<div class="range scroll-form__input">
 				Площадь квартиры <div class="range__value-wrap"><span class="range__value"></span> м<sup>2</sup></div>
 				<span class="range__fill"></span>
-				<input type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
+				<input name="range" type="range" step="10" min="40" max="400" value="40" class="calc-flat__range">
 			</div>
-			<input type="tel" class="input scroll-form__input" placeholder="Номер телефона">
-			<button class="button scroll-form__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
+			<input name="phone" type="tel" class="input scroll-form__input" placeholder="Номер телефона" required>
+			<button type="submit" class="button scroll-form__button">Заказать уборку за <span class="calc-flat__value">1990</span> руб.</button>
 		</div>
 	</form>
 
