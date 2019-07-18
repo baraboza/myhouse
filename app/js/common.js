@@ -15,6 +15,10 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 	});
 
 
+// select
+	$('.select select').selectric();
+
+
 // range
 	$('.range input').each(function(index, element) {
 		var min = $(element).attr('min');
@@ -116,7 +120,7 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 		$(this).parents('.calc-flat').find('.calc-flat__value').html(calcFlatValues[calcFlatType][calcFlatIndex]);
 	});
 
-	$('.calc-flat__type').on('input', function() {
+	$('.calc-flat__type').change(function() {
 		calcFlatType = $(this).val();
 		$(this).parents('.calc-flat').find('.calc-flat__value').html(calcFlatValues[calcFlatType][calcFlatIndex]);
 	});
@@ -141,7 +145,7 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 		$(this).parents('.calc-window').find('.calc-window__value').html(calcWindowValues[calcWindowType][calcWindowIndex]);
 	});
 
-	$('.calc-window__type').on('input', function() {
+	$('.calc-window__type').change(function() {
 		calcWindowType = $(this).val();
 
 		var max = (calcWindowValues[calcWindowType].length + 3) * 10;
@@ -219,7 +223,7 @@ $('input[type=tel]').mask('+7 (999) 999-99-99');
 		'serv51': 200
 	}
 
-	$('.calc-dry__type').on('input', function() {
+	$('.calc-dry__type').change(function() {
 		calcDryType = $(this).val();
 		$(this).parents('.calc-dry').find('.calc-dry__value').html(calcDryValues[calcDryType]);
 	});
